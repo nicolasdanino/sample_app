@@ -1,12 +1,14 @@
 source 'https://rubygems.org'
 
-group :development, :test do
-  gem 'rspec-rails',      ">= 2.0.0.beta"
+group :development do
+  gem 'rspec-rails', '~> 2.8'
+  gem 'webrat'
 end
 
 group :test do
-  gem 'rspec'
-  gem 'spork'
+  gem 'rspec-rails', '~> 2.8'
+  gem 'spork', '0.8.4'
+  gem 'webrat'
 end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
