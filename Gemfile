@@ -4,6 +4,11 @@ group :development, :test do
   gem 'rspec-rails',      ">= 2.0.0.beta"
 end
 
+group :test do
+  gem 'rspec'
+  gem 'spork'
+end
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
